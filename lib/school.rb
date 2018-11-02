@@ -24,7 +24,7 @@ class School
     return @roster[grade]
   end
 
-  def sorting
+  def sort
     @roster[grade].sort_by{|student_name| student_name[student_name]}
   end
 
