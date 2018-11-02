@@ -26,8 +26,12 @@ class School
 
   def sort
     # for each grad in roster
-    #sort the students in that grade and assign the sorted list back to the roster
+    #    sort the students in that grade and assign the sorted list back to the roster
     #then return the roster
+    @roster.each_key do |key|
+      student_list = @roster[key]
+      ## sort stuent list
+      @roster[key] = student_list
     @roster.sort{|grade, student_name| student_name[student_name]}
   end
 
