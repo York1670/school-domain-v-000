@@ -25,10 +25,9 @@ class School
   end
 
   def sort
-
     @roster.each_key do |key|
       student_list = @roster[key]
-      student_list.sort
+      student_list = student_list.sort
       @roster[key] = student_list
     end
   end
