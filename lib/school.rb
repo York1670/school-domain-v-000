@@ -20,7 +20,7 @@ class School
     roster[grade] = []
     gradelist = roster[grade]
     gradelist << student_name
-    roster[grade] = []
+    roster[grade] = gradelist
   end
 
   def grade(grade)
