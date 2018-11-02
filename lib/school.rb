@@ -28,7 +28,7 @@ class School
     # for each grad in roster
     #sort the students in that grade and assign the sorted list back to the roster
     #then return the roster
-    @roster.sort_by{|grade, student_name| student_name[student_name]}
+    @roster.sort_by{|grade, student_name| student_name[:student_name]}
   end
 
 end
